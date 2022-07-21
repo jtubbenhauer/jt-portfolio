@@ -5,7 +5,7 @@ import dotMatrix from "../assets/dot-matrix.svg";
 
 function HeroImage({ image }) {
   return (
-    <div className="bg-pink mt-20 p-6 relative">
+    <div className="bg-pink mt-20 p-6 relative md:mt-0">
       <img
         src={dotMatrix}
         alt="Abstract Cube Pattern"

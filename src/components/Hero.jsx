@@ -5,7 +5,7 @@ import Portrait from "../assets/ph-headshot.jpg";
 
 export function Hero() {
   return (
-    <div className="flex flex-col md:flex-row">
+    <div className="flex flex-col md:grid md:grid-cols-2">
       <div>
         <div className="pl-4 my-5">
           <h1 className="text-pink text-4xl font-bold">Jack Tubbenhauer</h1>
