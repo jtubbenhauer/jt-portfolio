@@ -5,10 +5,11 @@ import Vivus from "vivus";
 export function Navbar() {
   useEffect(() => {
     new Vivus("logo-anim", { duration: 250 }, () => console.log("works"));
+    new Vivus("hamburger-anim", { duration: 250 }, () => console.log("works"));
   }, []);
 
   return (
-    <nav className="flex px-4 justify-between">
+    <nav className="flex px-4 justify-between items-center">
       <svg
         id="logo-anim"
         width="70"
@@ -33,7 +34,33 @@ export function Navbar() {
           stroke-width="5"
         />
       </svg>
-      <img src={hamburger} alt="Hamburger Icon" />
+      <svg
+        id="hamburger-anim"
+        width="35"
+        height="30"
+        viewBox="0 0 44 30"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <rect
+          x="1"
+          y="1"
+          width="42"
+          height="8"
+          rx="2"
+          stroke="#F73D93"
+          stroke-width="3"
+        />
+        <rect
+          x="10"
+          y="21"
+          width="33"
+          height="8"
+          rx="2"
+          stroke="#F73D93"
+          stroke-width="3"
+        />
+      </svg>
     </nav>
   );
 }
