@@ -6,7 +6,10 @@ function capitalise(string) {
 
 function Card({ title, description, image, tech, subtext, url }) {
   return (
-    <div className="max-w-[80%] text-slate-200 bg-slate-700/60 mb-8 rounded-xl shadow-lg overflow-hidden">
+    <div
+      onClick={() => window.open(url, "_blank")}
+      className="max-w-[80%] text-slate-200 bg-slate-700/60 mb-8 rounded-xl shadow-lg overflow-hidden cursor-pointer transition-all hover:transform hover:scale-[101%]"
+    >
       <img src={image} alt="Project Screenshot" />
       <div className="p-4 flex flex-col gap-2">
         <h3 className="text-xl font-bold">{title}</h3>

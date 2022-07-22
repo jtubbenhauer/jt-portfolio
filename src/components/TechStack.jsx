@@ -13,9 +13,9 @@ import arrow from "../assets/arrow-down.svg";
 function TechStack() {
   return (
     <>
-      <h4 className="text-pink text-xl text-center italic mt-4">
-        My Tech Stack
-      </h4>
+      {/*<h4 className="text-pink text-xl text-center italic mt-4">*/}
+      {/*  My Tech Stack*/}
+      {/*</h4>*/}
       <div className="flex flex-wrap gap-3 md:gap-5 items-center justify-center max-w-[300px] mx-auto mt-4 md:mt-0 relative">
         <img src={js} alt="JavaScript Icon" width="40" height="40" />
         <img src={ts} alt="TypeScript Icon" width="40" height="40" />

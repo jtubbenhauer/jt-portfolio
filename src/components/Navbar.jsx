@@ -32,7 +32,7 @@ export function Navbar({ toggleMenu }) {
           strokeWidth="5"
         />
       </svg>
-      <div onClick={toggleMenu}>
+      <div className="md:hidden" onClick={toggleMenu}>
         <svg
           id="hamburger-anim"
           width="35"
