@@ -3,8 +3,8 @@ import Vivus from "vivus";
 
 export function Navbar() {
   useEffect(() => {
-    new Vivus("logo-anim", { duration: 250 }, () => console.log("works"));
-    new Vivus("hamburger-anim", { duration: 250 }, () => console.log("works"));
+    new Vivus("logo-anim", { duration: 100 }, () => console.log("works"));
+    // new Vivus("hamburger-anim", { duration: 200 }, () => console.log("works"));
   }, []);
 
   return (
