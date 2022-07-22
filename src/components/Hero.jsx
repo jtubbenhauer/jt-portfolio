@@ -5,11 +5,11 @@ import Portrait from "../assets/ph-headshot.jpg";
 
 export function Hero() {
   return (
-    <div className="flex flex-col md:grid md:grid-cols-2">
+    <section className="flex flex-col md:grid md:grid-cols-2">
       <div>
         {/* Headline block */}
 
-        <div className="pl-4 my-6">
+        <div className="pl-6 my-6">
           <h1 className="text-pink text-4xl font-bold">Jack Tubbenhauer</h1>
           <h2 className="text-3xl font-semibold text-slate-300">
             Web Developer
@@ -19,7 +19,7 @@ export function Hero() {
 
         {/* Typewriter list */}
 
-        <div className="text-slate-300 mt-8 text-lg italic pl-4">
+        <div className="text-slate-300 mt-8 text-lg italic pl-10">
           <div className="whitespace-pre-line min-h-[115px]">
             <Typewriter
               onInit={(typewriter) => {
@@ -36,7 +36,7 @@ export function Hero() {
 
         {/* Button section */}
 
-        <div className="pl-4 mt-2">
+        <div className="pl-10 mt-2">
           <Button
             text={"Get In Touch"}
             url={"/"}
@@ -46,6 +46,6 @@ export function Hero() {
         </div>
       </div>
       <HeroImage image={Portrait} />
-    </div>
+    </section>
   );
 }
