@@ -6,6 +6,7 @@ import CardSection from "./components/CardSection.jsx";
 import TechStack from "./components/TechStack.jsx";
 import { useState } from "react";
 import MobileMenu from "./components/MobileMenu.jsx";
+import Contact from "./components/Contact.jsx";
 
 function App() {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -24,6 +25,7 @@ function App() {
         <TechStack />
       </section>
       <CardSection />
+      <Contact />
     </>
   );
 }

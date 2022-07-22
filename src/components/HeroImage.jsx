@@ -9,17 +9,17 @@ function HeroImage({ image }) {
       <img
         src={dotMatrix}
         alt="Abstract Cube Pattern"
-        className="absolute bottom-8"
+        className="absolute bottom-8 z-0 left-2"
       />
       <img
         src={image}
         alt="Jack Tubbenhauer Portrait Image"
-        className="rounded-full w-44 h-44 object-cover mx-auto my-4"
+        className="rounded-full w-44 h-44 object-cover mx-auto my-4 z-50"
       />
       <img
         src={cubePattern2}
         alt="Abstract Cube Pattern"
-        className="absolute right-5 top-10"
+        className="absolute right-5 top-10 z-0"
       />
     </div>
   );
