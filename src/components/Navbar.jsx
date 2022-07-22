@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import Vivus from "vivus";
 
-export function Navbar() {
+export function Navbar({ toggleMenu }) {
   useEffect(() => {
     new Vivus("logo-anim", { duration: 100 }, () => console.log("works"));
     // new Vivus("hamburger-anim", { duration: 200 }, () => console.log("works"));
@@ -32,33 +32,35 @@ export function Navbar() {
           strokeWidth="5"
         />
       </svg>
-      <svg
-        id="hamburger-anim"
-        width="35"
-        height="30"
-        viewBox="0 0 44 30"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <rect
-          x="1"
-          y="1"
-          width="42"
-          height="8"
-          rx="2"
-          stroke="#F73D93"
-          strokeWidth="3"
-        />
-        <rect
-          x="10"
-          y="21"
-          width="33"
-          height="8"
-          rx="2"
-          stroke="#F73D93"
-          strokeWidth="3"
-        />
-      </svg>
+      <div onClick={toggleMenu}>
+        <svg
+          id="hamburger-anim"
+          width="35"
+          height="30"
+          viewBox="0 0 44 30"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <rect
+            x="1"
+            y="1"
+            width="42"
+            height="8"
+            rx="2"
+            stroke="#F73D93"
+            strokeWidth="3"
+          />
+          <rect
+            x="10"
+            y="21"
+            width="33"
+            height="8"
+            rx="2"
+            stroke="#F73D93"
+            strokeWidth="3"
+          />
+        </svg>
+      </div>
     </nav>
   );
 }
