@@ -5,7 +5,7 @@ import dotMatrix from "../assets/dot-matrix.svg";
 
 function HeroImage({ image }) {
   return (
-    <div className="mt-8 p-6 relative md:mt-0">
+    <div className="mt-8 p-6 relative md:mt-0 -z-10">
       <img
         src={dotMatrix}
         alt="Abstract Cube Pattern"
@@ -14,7 +14,7 @@ function HeroImage({ image }) {
       <img
         src={image}
         alt="Jack Tubbenhauer Portrait Image"
-        className="rounded-full w-44 h-44 object-cover mx-auto my-4 z-50"
+        className="rounded-full w-44 h-44 object-cover mx-auto my-4"
       />
       <img
         src={cubePattern2}
