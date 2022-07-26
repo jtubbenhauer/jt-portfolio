@@ -4,7 +4,6 @@ import Vivus from "vivus";
 export function Navbar({ toggleMenu }) {
   useEffect(() => {
     new Vivus("logo-anim", { duration: 100 }, () => console.log("works"));
-    // new Vivus("hamburger-anim", { duration: 200 }, () => console.log("works"));
   }, []);
 
   return (
