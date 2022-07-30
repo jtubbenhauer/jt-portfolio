@@ -5,21 +5,21 @@ import Portrait from "../assets/ph-headshot.jpg";
 
 export function Hero() {
   return (
-    <section className="flex flex-col md:grid md:grid-cols-2">
-      <div>
+    <section className="flex flex-col md:grid md:grid-cols-2 md:h-[calc(100vh-83px)] md:items-center md:-translate-y-8">
+      <div className="md:flex md:flex-col md:mx-auto">
         {/* Headline block */}
 
-        <div className="pl-6 my-6">
-          <h1 className="text-pink text-4xl font-bold">Jack Tubbenhauer</h1>
-          <h2 className="text-3xl font-semibold text-slate-300">
+        <div className="pl-6 my-6 flex flex-col md:gap-4">
+          <h1 className="text-pink text-4xl font-bold md:text-6xl">Jack Tubbenhauer</h1>
+          <h2 className="text-3xl md:text-5xl font-semibold text-slate-300">
             Web Developer
           </h2>
-          <p className="text-slate-300">Sydney, Australia</p>
+          <p className="text-slate-300 md:text-xl">Sydney, Australia</p>
         </div>
 
         {/* Typewriter list */}
 
-        <div className="text-slate-300 mt-8 text-lg italic pl-10">
+        <div className="text-slate-300 mt-8 text-lg md:text-xl lg:text-2xl italic pl-10">
           <div className="whitespace-pre-line min-h-[115px]">
             <Typewriter
               onInit={(typewriter) => {
