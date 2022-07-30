@@ -1,5 +1,21 @@
 import React, { useEffect } from "react";
 import Vivus from "vivus";
+import DesktopMenu from "./DesktopMenu.jsx";
+
+const menuItems = [
+  {
+    title: "About Me",
+    href: "#about",
+  },
+  {
+    title: "My Work",
+    href: "#work",
+  },
+  {
+    title: "Contact",
+    href: "#contact",
+  },
+];
 
 export function Navbar({ toggleMenu }) {
   useEffect(() => {
@@ -31,6 +47,9 @@ export function Navbar({ toggleMenu }) {
           strokeWidth="5"
         />
       </svg>
+      {/*Desktop Menu*/}
+      <DesktopMenu items={menuItems} />
+      {/*Hamburger menu*/}
       <div className="md:hidden" onClick={toggleMenu}>
         <svg
           id="hamburger-anim"

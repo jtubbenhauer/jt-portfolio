@@ -39,7 +39,7 @@ export function Hero() {
         <div className="pl-10 mt-2">
           <Button
             text={"Get In Touch"}
-            url={"/"}
+            url={"#contact"}
             borderColor={"border-pink"}
             textColor={"text-slate-200"}
           />

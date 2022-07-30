@@ -12,7 +12,7 @@ function Contact() {
   };
 
   return (
-    <div>
+    <div id="contact">
       <h2 className="text-3xl font-bold text-pink text-center mb-5">
         Get In Touch
       </h2>
