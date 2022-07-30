@@ -23,7 +23,7 @@ export function Navbar({ toggleMenu }) {
   }, []);
 
   return (
-    <nav className="flex px-4 justify-between items-center max-w-[1200px] mx-auto">
+    <nav className="flex px-6 justify-between items-center max-w-[1200px] mx-auto">
       <svg
         id="logo-anim"
         width="70"

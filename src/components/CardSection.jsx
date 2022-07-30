@@ -42,7 +42,10 @@ const projects = [
 function CardSection() {
   return (
     <section>
-      <h2 className="text-3xl text-pink font-bold mt-12 mb-4 text-center">
+      <h2
+        className="text-3xl lg:text-4xl text-pink font-bold mt-20 mb-6 text-center"
+        id="work"
+      >
         My Work
       </h2>
       <div className="flex flex-col items-center justify-center md:grid md:grid-cols-2 lg:grid-cols-3 md:justify-items-center">

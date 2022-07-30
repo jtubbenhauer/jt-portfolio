@@ -23,7 +23,7 @@ function TechStack() {
         <img src={firebase} alt="Firebase Icon" width="36" height="36" />
         <img src={wordpress} alt="Wordpress Icon" width="40" height="40" />
         <img src={shopify} alt="Shopify Icon" width="40" height="40" />
-        <div className="absolute right-0 bottom-[-4rem]">
+        <div className="absolute right-0 bottom-[-5rem]">
           <img
             src={arrow}
             alt="Curved Arrow Pointing Down"

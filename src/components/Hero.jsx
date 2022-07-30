@@ -9,11 +9,11 @@ export function Hero() {
       <div className="md:flex md:flex-col mx-auto lg:translate-x-12">
         {/* Headline block */}
 
-        <div className="my-6 flex flex-col md:gap-4">
-          <h1 className="text-pink text-4xl font-bold md:text-6xl">
+        <div className="my-6 flex flex-col md:gap-2 lg:gap-4">
+          <h1 className="text-pink text-4xl font-bold md:text-4xl lg:text-6xl">
             Jack Tubbenhauer
           </h1>
-          <h2 className="text-3xl md:text-5xl font-semibold text-slate-300">
+          <h2 className="text-3xl md:text-3xl lg:text-5xl font-semibold text-slate-300">
             Web Developer
           </h2>
           <p className="text-slate-300 md:text-xl">Sydney, Australia</p>
