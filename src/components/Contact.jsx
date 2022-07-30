@@ -17,8 +17,8 @@ function Contact() {
         Get In Touch
       </h2>
       <p className="text-slate-300 text-center max-w-[355px] mx-auto mb-6 px-4">
-        Have a project you'd to discuss? Send me a message below and I'll get
-        back to you ASAP.
+        Have a project you'd like to discuss? Send me a message below and I'll
+        get back to you ASAP.
       </p>
       <form className="flex flex-col items-center gap-5">
         <input
