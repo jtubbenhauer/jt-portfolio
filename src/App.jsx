@@ -32,7 +32,7 @@ function App() {
       </Transition>
       <Navbar toggleMenu={toggleMenu} />
       <Hero />
-      <section className="md:grid grid-cols-2">
+      <section>
         <About />
         <TechStack />
       </section>

@@ -5,11 +5,11 @@ import dotMatrix from "../assets/dot-matrix.svg";
 
 function HeroImage({ image }) {
   return (
-    <div className="mt-8 p-6 relative md:mt-0 -z-10">
+    <div className="mt-8 p-6 relative md:mt-0 -z-10 max-w-lg mx-auto min-w-[80%]">
       <img
         src={dotMatrix}
         alt="Abstract Cube Pattern"
-        className="absolute bottom-8 z-0 left-2"
+        className="absolute bottom-8 -z-10 left-2"
       />
       <img
         src={image}
@@ -19,7 +19,7 @@ function HeroImage({ image }) {
       <img
         src={cubePattern2}
         alt="Abstract Cube Pattern"
-        className="absolute right-5 top-10 z-0"
+        className="absolute right-5 top-10 -z-10"
       />
     </div>
   );

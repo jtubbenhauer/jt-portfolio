@@ -6,7 +6,7 @@ function DesktopMenu({ items }) {
       {items.map((i) => (
         <a
           href={i.href}
-          className="text-slate-300 transition-all text-xl hover:text-pink relative before:absolute before:top-0 before:left-0 before:-bottom-2 before:right-0 hover:before:border-b-2 before:border-b-pink"
+          className="text-slate-300 transition-all text-xl hover:text-pink relative before:absolute before:top-0 before:left-0 before:-bottom-2 before:right-0 hover:before:border-b-2 before:border-b-pink before:transition-opacity before:opacity-0 before:hover:opacity-100"
         >
           {i.title}
         </a>
