@@ -18,7 +18,7 @@ function App() {
   };
 
   return (
-    <>
+    <div className="max-w-[1200px] mx-auto">
       <Transition
         show={mobileOpen}
         enter="transition-opacity duration-250"
@@ -32,14 +32,14 @@ function App() {
       </Transition>
       <Navbar toggleMenu={toggleMenu} />
       <Hero />
-      <section>
+      <section className="md:flex">
         <About />
         <TechStack />
       </section>
       <CardSection />
       <Contact />
       <Footer />
-    </>
+    </div>
   );
 }
 
