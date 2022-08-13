@@ -5,8 +5,8 @@ import Portrait from "../assets/ph-headshot.jpg";
 
 export function Hero() {
   return (
-    <section className="flex flex-col md:grid md:grid-cols-2 md:items-center md:-translate-y-8 md:my-16 ">
-      <div className="md:flex md:flex-col mx-auto lg:translate-x-12">
+    <section className="flex flex-col md:grid md:grid-cols-2 md:items-center md:-translate-y-8 md:my-16 max-w-[1200px] mx-auto">
+      <div className="md:flex md:flex-col mx-auto ">
         {/* Headline block */}
 
         <div className="my-6 flex flex-col md:gap-2 lg:gap-4">
