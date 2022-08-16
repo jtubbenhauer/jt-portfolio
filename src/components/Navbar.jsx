@@ -50,7 +50,7 @@ export function Navbar({ toggleMenu }) {
       {/*Desktop Menu*/}
       <DesktopMenu items={menuItems} />
       {/*Hamburger menu*/}
-      <div className="md:hidden" onClick={toggleMenu}>
+      <div className="md:hidden cursor-pointer" onClick={toggleMenu}>
         <svg
           id="hamburger-anim"
           width="35"

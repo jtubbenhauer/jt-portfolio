@@ -27,6 +27,7 @@ export function Hero() {
               onInit={(typewriter) => {
                 typewriter
                   .pauseFor(400)
+                  .changeDelay(100)
                   .typeString(
                     "Frontend Development\n UI/UX Design\n Ecommerce Specialist"
                   )

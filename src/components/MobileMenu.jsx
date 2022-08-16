@@ -23,7 +23,12 @@ function MobileMenu({ toggleMenu }) {
       {/* Menu div */}
       <div className="absolute right-0">
         <div className="p-5 bg-[#20222c] h-screen w-[60vw] flex items-end flex-col pr-8">
-          <img src={closeIcon} alt="Close Icon" onClick={toggleMenu} />
+          <img
+            src={closeIcon}
+            alt="Close Icon"
+            onClick={toggleMenu}
+            className="cursor-pointer"
+          />
           <ul className="text-right text-slate-300 flex flex-col gap-8 mt-8 text-2xl font-bold">
             {menuItems.map((i) => (
               <a href={i.href} onClick={toggleMenu}>

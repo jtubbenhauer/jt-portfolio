@@ -18,28 +18,30 @@ function App() {
   };
 
   return (
-    <div className="max-w-[1200px] mx-auto">
-      <Transition
-        show={mobileOpen}
-        enter="transition-opacity duration-250"
-        enterFrom="opacity-0"
-        enterTo="opacity-100"
-        leave="transition-opacity duration-250"
-        leaveFrom="opacity-100"
-        leaveTo="opacity-0"
-      >
-        <MobileMenu toggleMenu={toggleMenu} />
-      </Transition>
-      <Navbar toggleMenu={toggleMenu} />
-      <Hero />
-      <section className="md:flex">
-        <About />
-        <TechStack />
-      </section>
-      <CardSection />
-      <Contact />
+    <>
+      <div className="max-w-[1200px] mx-auto">
+        <Transition
+          show={mobileOpen}
+          enter="transition-opacity duration-250"
+          enterFrom="opacity-0"
+          enterTo="opacity-100"
+          leave="transition-opacity duration-250"
+          leaveFrom="opacity-100"
+          leaveTo="opacity-0"
+        >
+          <MobileMenu toggleMenu={toggleMenu} />
+        </Transition>
+        <Navbar toggleMenu={toggleMenu} />
+        <Hero />
+        <section className="md:flex">
+          <About />
+          <TechStack />
+        </section>
+        <CardSection />
+        <Contact />
+      </div>
       <Footer />
-    </div>
+    </>
   );
 }
 

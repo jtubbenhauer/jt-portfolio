@@ -11,9 +11,9 @@ function Card({ title, description, image, subtext, url }) {
       className="max-w-[80%] text-slate-200 bg-slate-700/60 mb-8 rounded-xl shadow-lg overflow-hidden cursor-pointer transition-all hover:transform hover:scale-[101%]"
     >
       <img src={image} alt="Project Screenshot" />
-      <div className="p-4 flex flex-col justify-center items-center gap-2 min-h-[10rem]">
+      <div className="p-4 flex flex-col justify-evenly items-center gap-2 min-h-[12rem]">
         <h3 className="text-xl font-bold">{title}</h3>
-        <p className="italic text-[15px] text-slate-200/80 text-center">
+        <p className="italic text-[15px] text-slate-200/80 text-center -mt-4">
           {subtext}
         </p>
         <p className="text-center">{description}</p>

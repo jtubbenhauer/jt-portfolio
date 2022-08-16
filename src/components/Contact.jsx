@@ -1,5 +1,7 @@
 import React from "react";
 import { useState } from "react";
+import cubePattern2 from "../assets/cube-pattern2.svg";
+import dotMatrix from "../assets/dot-matrix.svg";
 
 function Contact() {
   const [name, setName] = useState("");
@@ -12,7 +14,7 @@ function Contact() {
   };
 
   return (
-    <div id="contact">
+    <div id="contact" className="mt-10 relative">
       <h2 className="text-3xl lg:text-4xl font-bold text-pink text-center mb-4">
         Get In Touch
       </h2>
@@ -48,6 +50,16 @@ function Contact() {
           Send
         </button>
       </form>
+      {/*<img*/}
+      {/*  src={dotMatrix}*/}
+      {/*  className="absolute right-60 lg:right-80 bottom-10 -z-10 hidden md:block"*/}
+      {/*  alt="Decorative pattern"*/}
+      {/*/>*/}
+      {/*<img*/}
+      {/*  src={cubePattern2}*/}
+      {/*  className="absolute left-60 lg:left-80 top-10 -z-10 hidden md:block"*/}
+      {/*  alt="Decorative pattern"*/}
+      {/*/>*/}
     </div>
   );
 }
