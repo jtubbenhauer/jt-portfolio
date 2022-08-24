@@ -1,20 +1,39 @@
 import React from "react";
 import { useState } from "react";
-import cubePattern2 from "../assets/cube-pattern2.svg";
-import dotMatrix from "../assets/dot-matrix.svg";
+import emailjs from "@emailjs/browser";
+import Spinner from "./Spinner.jsx";
 
 function Contact() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const [loading, setLoading] = useState(false);
+  const [emailStatus, setEmailStatus] = useState("");
 
-  const formSubmit = (e) => {
+  const formSubmit = async (e) => {
     e.preventDefault();
-    console.log(name, email, message);
+    setLoading(true);
+    let templateParams = {
+      user_name: name,
+      user_email: email,
+      message: message,
+    };
+    await emailjs
+      .send(
+        "gmail_service",
+        "jt_contact_form",
+        templateParams,
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+      )
+      .then(
+        () => setLoading(false),
+        () => console.log("failed")
+      );
   };
 
   return (
-    <div id="contact" className="mt-10 relative">
+    <div id="contact" className="mt-10 relative relative">
+      {loading && <Spinner />}
       <h2 className="text-3xl lg:text-4xl font-bold text-pink text-center mb-4">
         Get In Touch
       </h2>
@@ -40,26 +59,17 @@ function Contact() {
         <textarea
           placeholder="Message"
           value={message}
+          rows={6}
           className="border-pink rounded p-2 bg-slate-700 text-slate-100 placeholder:text-slate-300 w-3/4 max-w-[355px]"
           onChange={(e) => setMessage(e.target.value)}
         />
         <button
           onClick={formSubmit}
-          className="rounded-lg mt-2 py-2 px-4 font-bold text-lg border-2 border-solid border-pink text-slate-200"
+          className="rounded-lg mt-2 py-2 px-4 font-bold text-lg border-2 border-solid border-pink text-slate-200 transition-all hover:border-transparent hover:bg-pink "
         >
-          Send
+          Send Message
         </button>
       </form>
-      {/*<img*/}
-      {/*  src={dotMatrix}*/}
-      {/*  className="absolute right-60 lg:right-80 bottom-10 -z-10 hidden md:block"*/}
-      {/*  alt="Decorative pattern"*/}
-      {/*/>*/}
-      {/*<img*/}
-      {/*  src={cubePattern2}*/}
-      {/*  className="absolute left-60 lg:left-80 top-10 -z-10 hidden md:block"*/}
-      {/*  alt="Decorative pattern"*/}
-      {/*/>*/}
     </div>
   );
 }
