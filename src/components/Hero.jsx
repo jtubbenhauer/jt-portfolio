@@ -1,7 +1,8 @@
 import Button from "./Button.jsx";
 import Typewriter from "typewriter-effect";
 import HeroImage from "./HeroImage.jsx";
-import Portrait from "../assets/ph-headshot.jpg";
+import Portrait from "../assets/portf1.jpg";
+import React from "react";
 
 export function Hero() {
   return (
@@ -39,14 +40,11 @@ export function Hero() {
 
         {/* Button section */}
 
-        <div className="mt-2">
-          <Button
-            text={"Get In Touch"}
-            url={"#contact"}
-            borderColor={"border-pink"}
-            textColor={"text-slate-200"}
-          />
-        </div>
+        <a href="/#contact">
+          <button className="rounded-lg mt-2 py-2 px-4 font-bold text-lg border-2 border-solid border-pink text-slate-200 transition-all hover:border-transparent hover:bg-pink ">
+            Get In Touch
+          </button>
+        </a>
       </div>
       <HeroImage image={Portrait} />
     </section>

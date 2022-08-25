@@ -14,7 +14,7 @@ function HeroImage({ image }) {
       <img
         src={image}
         alt="Jack Tubbenhauer Portrait Image"
-        className="rounded-full w-44 h-44 md:h-72 md:w-72 lg:h-96 lg:w-96 object-cover mx-auto my-4"
+        className="rounded-full w-[16rem] h-[16rem] md:h-[20rem] md:w-[20rem] lg:h-96 lg:w-96 object-cover mx-auto my-4"
       />
       <img
         src={cubePattern2}

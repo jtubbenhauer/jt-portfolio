@@ -7,9 +7,21 @@ function About() {
         About Me
       </h2>
       <p className="text-slate-300 p-8 max-w-[450px] text-center mx-auto md:text-lg lg:text-xl md:max-w-2xl">
-        I'm a web developer based in Sydney, Australia. I have a background in
-        building and operating successful ecommerce stores, and have developed a
-        passion for coding and web design along the way.
+        Hi, I'm a web developer based in Sydney, Australia. My background is in
+        building and operating successful Shopify and WordPress ecommerce
+        stores, though I love building UIs and websites for any industry.
+      </p>
+      <p
+        className={
+          "text-slate-300 px-8 max-w-[450px] text-center mb-12 md:mb-2 mx-auto md:text-lg lg:text-xl md:max-w-2xl"
+        }
+      >
+        I am currently available for work on new or existing projects - so
+        please{" "}
+        <a href="/#contact" className={"text-pink"}>
+          get in touch
+        </a>{" "}
+        if you'd like to chat.
       </p>
     </div>
   );

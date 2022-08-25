@@ -26,8 +26,14 @@ function Contact() {
         import.meta.env.VITE_EMAILJS_PUBLIC_KEY
       )
       .then(
-        () => setLoading(false),
-        () => console.log("failed")
+        () => {
+          setEmailStatus("sent");
+          setLoading(false);
+        },
+        () => {
+          setEmailStatus("failed");
+          setLoading(false);
+        }
       );
   };
 
@@ -69,6 +75,16 @@ function Contact() {
         >
           Send Message
         </button>
+        {emailStatus === "sent" && (
+          <p className="text-green-300 font-bold">
+            Thanks for getting in touch!
+          </p>
+        )}
+        {emailStatus === "failed" && (
+          <p className="text-red-500 font-bold">
+            There was error sending your message. Please try again.
+          </p>
+        )}
       </form>
     </div>
   );

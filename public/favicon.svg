@@ -1,0 +1,20 @@
+<svg
+        id="logo-svg"
+        width="100"
+        height="100"
+        viewBox="0 0 100 100"
+        fill="#F73D93"
+        xmlns="http://www.w3.org/2000/svg"
+>
+    <path
+            d="M16.5 56L3 66.5C20 93 56 81.5 56 53.5V1.5H35V54.5C34 68.5 19 63 16.5 56Z"
+            stroke="#F73D93"
+            stroke-width="5"
+    />
+    <path
+            d="M128.5 1.5H67V19H87.5V79.5H108V19H128.5V1.5Z"
+            stroke="#F73D93"
+            stroke-width="5"
+    />
+
+</svg>

@@ -19,7 +19,7 @@ const menuItems = [
 
 export function Navbar({ toggleMenu }) {
   useEffect(() => {
-    new Vivus("logo-anim", { duration: 100 }, () => console.log("works"));
+    new Vivus("logo-anim", { duration: 100 });
   }, []);
 
   return (
