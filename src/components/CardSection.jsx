@@ -2,6 +2,7 @@ import React from "react";
 import humbugImage from "../assets/humbug-screenshot.webp";
 import plantgirlImage from "../assets/plantgirl-screenshot.webp";
 import undrinkImage from "../assets/undrink-screenshot.webp";
+import akeepImage from "../assets/akeep-screenshot.webp";
 import iconCss from "../assets/icon-css.png";
 import iconHtml from "../assets/icon-html.png";
 import iconJs from "../assets/icon-javascript.png";
@@ -36,6 +37,14 @@ const projects = [
     subtext: "Online non-alcoholic beer & wine store - Sydney, NSW",
     url: "https://undrink.com.au",
     tech: [iconShopify, iconHtml, iconCss, iconJs],
+  },
+  {
+    title: "Andrew Keep",
+    description: "Landing page for independent contractor utilising Chakra UI",
+    image: akeepImage,
+    subtext: "Geotechnical Engineer - Blue Mountains, NSW",
+    url: "https://andrewkeep.com",
+    tech: [iconHtml, iconCss, iconJs],
   },
 ];
 

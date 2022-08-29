@@ -8,6 +8,7 @@ import react from "../assets/react.svg";
 import firebase from "../assets/firebase.svg";
 import wordpress from "../assets/wordpress.svg";
 import shopify from "../assets/shopify.svg";
+import sql from "../assets/icon-sql.png";
 import arrow from "../assets/arrow-down.svg";
 
 function TechStack() {
@@ -23,7 +24,9 @@ function TechStack() {
         <img src={shopify} alt="Shopify Icon" width="50" height="40" />
         <img src={git} alt="GitHub Icon" width="70" height="52" />
         <img src={firebase} alt="Firebase Icon" width="35" height="36" />
-        <div className="absolute right-0 bottom-[-5rem]">
+        <img src={sql} alt="SQL Icon" width="50" height="50" />
+
+        <div className="absolute right-0 bottom-[-7rem]">
           <img
             src={arrow}
             alt="Curved Arrow Pointing Down"
